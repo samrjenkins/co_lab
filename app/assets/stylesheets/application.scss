@@ -17,3 +17,10 @@
 body {
   background-color: $bkgd;
 }
+a {
+  color: $lighter-gray;
+  transition: 0.5s;
+}
+a:hover {
+  color: $green;
+}

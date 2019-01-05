@@ -20,10 +20,27 @@
     transition: 0.5s;
     color: $light-gray;
   }
-  i:hover {
+  .user-options {
+    position: relative;
+  }
+
+  .user-dropdown {
+    position: relative;
+    .dropdown-content {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      display: none
+    }
+  }
+  .user-options:hover .dropdown-content {
+    display: block;
+  }
+  .user-options:hover i#user-icon {
     color: $green;
     cursor: pointer;
   }
+
 }
 .navbar:before, .navbar:after {
   display: table;

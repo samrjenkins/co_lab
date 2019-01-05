@@ -3,5 +3,18 @@
   <a href=<%= root_path %>>
     <h1>CoLab</h1>
   </a>
-  <i class="far fa-user"></i>
+  <div class="user-options">
+    <% if user_signed_in? %>
+      <div class="user-dropdown">
+        <i class="far fa-user" id="user-icon"></i>
+        <div class="dropdown-content">
+          <%= link_to("Dashboard", "#") %>
+          <%= link_to("New project", new_project_path) %>
+          <%= link_to("Sign out", destroy_user_session_path, method: :delete) %>
+        </div>
+      </div>
+    <% else %>
+      <%= link_to("Sign in", new_user_session_path) %>
+    <% end %>
+  </div>
 </div>
