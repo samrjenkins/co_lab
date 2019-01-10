@@ -1,0 +1,9 @@
+<div class="container">
+  <%= simple_form_for [@project, @contribution] do |f| %>
+      <%= f.input :headline, input_html: { class: "form-control green" } %>
+      <%= f.input :description, input_html: { class: "form-control green" } %>
+      <div class="centre-button">
+        <%= f.submit "Publish contribution", class: "smpl-btn" %>
+      </div>
+  <% end %>
+</div>

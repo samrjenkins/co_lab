@@ -1,0 +1,13 @@
+form {
+  color: white;
+  .green {
+    background-color: transparent !important;
+    color: $green;
+  }
+}
+
+
+.centre-button {
+  display: flex;
+  justify-content: center;
+}

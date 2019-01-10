@@ -1,0 +1,5 @@
+<div class="project-show">
+  <p><%= @project.title %></p>
+  <%= link_to "New contribution", new_project_contribution_path(@project) %>
+  <%= @project.contributions.count %>
+</div>
